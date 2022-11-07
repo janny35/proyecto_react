@@ -16,14 +16,8 @@ export default {
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof MenuDrawer> = (args) => <MenuDrawer {...args} />;
 
-export const Primary = Template.bind({});
+export const Menu = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
-
-export const Secondary = Template.bind({});
-Secondary.args = {
-  label: 'Button',
+Menu.args = {
+  labels: ['home','usuarios'],
 };
